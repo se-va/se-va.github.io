@@ -39,7 +39,8 @@
     --nav-color: #000000;
 
     /* The default color of the main navmenu links */
-    --nav-hover-color: #c88a16;
+    /* --nav-hover-color: #c88a16; */
+    --nav-hover-color: #db7b15;
 
     /* --nav-hover-color: #c85716; */
     /* Applied to main navmenu links when they are hovered over or active */
@@ -52,7 +53,7 @@
     --nav-dropdown-color: #000000;
 
     /* Used for navigation links of the dropdown items in the navigation menu. */
-    --nav-dropdown-hover-color: #c88d16;
+    --nav-dropdown-hover-color: #cd771c;
 
     /* --nav-dropdown-hover-color: #c85716; */
     /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
