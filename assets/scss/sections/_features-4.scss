@@ -1,0 +1,77 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Features 4 Section
+--------------------------------------------------------------*/
+.features-4 {
+  .feature-item {
+    background-color: color-mix(in srgb, var(--surface-color), transparent 50%);
+    backdrop-filter: blur(10px);
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    border-radius: 15px;
+    padding: 2.5rem;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      border-color: color-mix(in srgb, var(--accent-color), transparent 70%);
+
+      .illustration img {
+        transform: scale(1.05) rotate(2deg);
+      }
+    }
+
+    .illustration {
+      margin-bottom: 2rem;
+
+      img {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+        display: block;
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--heading-color);
+    }
+
+    p {
+      color: color-mix(in srgb, var(--default-color), transparent 20%);
+      margin: 0;
+      line-height: 1.6;
+    }
+  }
+
+  // Responsive Styles
+  @media (max-width: 991px) {
+    .feature-item {
+      padding: 2rem;
+
+      .illustration img {
+        max-width: 220px;
+      }
+
+      h3 {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .feature-item {
+      padding: 1.5rem;
+
+      .illustration img {
+        max-width: 200px;
+      }
+    }
+  }
+}
