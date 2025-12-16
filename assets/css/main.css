@@ -15,6 +15,7 @@
 
     /* Background color for the entire website, including individual sections */
     --default-color: #001938;
+    --default-color-70: #00193880;
 
     /* Default color used for the majority of the text content across the entire website */
     --heading-color: #110a06;
@@ -1020,6 +1021,8 @@ section,
 
 .testimonials-3 .testimonial-item .stars i {
     color: #ffc107;
+
+    /* color: #9615ec; */
     margin: 0 1px;
 }
 
@@ -1655,7 +1658,12 @@ section,
 }
 
 .testimonials-2 .testimonial-item .stars i {
-    color: #ffc107;
+    /* color: #ffc107; */
+    /* color: var(--default-color-70); */
+    /* 25% цвета + 75% прозрачности */
+    color: color-mix(in srgb, var(--default-color) 65%, transparent);
+
+    /* color: rgba(var(--default-color), 0.7); */
     margin: 0 1px;
 }
 

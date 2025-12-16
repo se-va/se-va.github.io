@@ -20,7 +20,10 @@
     --heading-color: #110a06;
 
     /* Color for headings, subheadings and title throughout the website */
-    --accent-color: #c85716;
+    /* --accent-color: #c85716; */
+    /* --accent-color: #c84e16; */
+    /* --accent-color: #cf5716; */
+    --accent-color: #cb4d0e;
 
     /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
     --surface-color: #ffffff;
@@ -36,8 +39,10 @@
     --nav-color: #000000;
 
     /* The default color of the main navmenu links */
-    --nav-hover-color: #c85716;
+    /* --nav-hover-color: #c88a16; */
+    --nav-hover-color: #db7b15;
 
+    /* --nav-hover-color: #c85716; */
     /* Applied to main navmenu links when they are hovered over or active */
     --nav-mobile-background-color: #0e1530;
 
@@ -48,8 +53,9 @@
     --nav-dropdown-color: #000000;
 
     /* Used for navigation links of the dropdown items in the navigation menu. */
-    --nav-dropdown-hover-color: #c85716;
+    --nav-dropdown-hover-color: #cd771c;
 
+    /* --nav-dropdown-hover-color: #c85716; */
     /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
@@ -202,7 +208,8 @@ h6 {
 /* Global Header on Scroll
 ------------------------------ */
 .scrolled .header {
-    --background-color: rgba(135, 58, 14, 0.875);
+    /* --background-color: rgba(135, 58, 14, 0.875); */
+    --background-color: rgba(3, 75, 123, 0.8);
 }
 
 /* --------------------------------------------------------------
@@ -885,7 +892,7 @@ section,
 
 .features-4 .feature-item .illustration img {
     width: 100%;
-    max-width: 280px;
+    max-width: 300px;
     margin: 0 auto;
     display: block;
     transition: transform 0.3s ease-in-out;
@@ -909,7 +916,7 @@ section,
     }
 
     .features-4 .feature-item .illustration img {
-        max-width: 220px;
+        max-width: 250px;
     }
 
     .features-4 .feature-item h3 {
@@ -1013,6 +1020,8 @@ section,
 
 .testimonials-3 .testimonial-item .stars i {
     color: #ffc107;
+
+    /* color: #9615ec; */
     margin: 0 1px;
 }
 
@@ -1088,6 +1097,23 @@ section,
 /* --------------------------------------------------------------
 # Testimonials Section
 -------------------------------------------------------------- */
+.testimonials {
+    position: relative;
+    z-index: 1;
+}
+
+.testimonials::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(102, 16, 1, 0.098);
+    z-index: -1;
+    pointer-events: none;
+}
+
 .testimonials .testimonials-slider {
     width: 100%;
     position: relative;
@@ -1099,7 +1125,7 @@ section,
 }
 
 .testimonials .testimonial-item {
-    background-color: var(--surface-color);
+    /* background-color: var(--surface-color); */
     padding: 40px;
     border-radius: 20px;
 }
@@ -1224,11 +1250,11 @@ section,
 }
 
 .about-2 .image-column .main-image {
-    position: relative;
-    height: 100%;
-    border-radius: 0 50px 50px 0;
-    overflow: hidden;
-    box-shadow: 30px 30px 80px color-mix(in srgb, var(--accent-color), transparent 85%);
+    /* position: relative; */
+    /* height: 100%; */
+    /* border-radius: 0 50px 50px 0; */
+    /* overflow: hidden; */
+    /* box-shadow: 30px 30px 80px color-mix(in srgb, var(--accent-color), transparent 85%); */
     transform: translateX(-15px);
 }
 
@@ -1256,12 +1282,13 @@ section,
     left: 0;
     right: 0;
     height: 50%;
-    background: linear-gradient(to top, color-mix(in srgb, var(--accent-color), transparent 30%), transparent);
+
+    /* background: linear-gradient(to top, color-mix(in srgb, var(--accent-color), transparent 30%), transparent); */
 }
 
 .about-2 .image-column .badge-card {
     position: absolute;
-    bottom: 40px;
+    bottom: 10px;
     left: 40px;
     background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), black 15%));
     padding: 30px 40px;
@@ -1605,11 +1632,12 @@ section,
 }
 
 .testimonials-2 .testimonial-item .testimonial-img {
-    width: 90px;
-    height: 90px;
-    border-radius: 50px;
-    border: 6px solid var(--background-color);
-    margin-right: 10px;
+    width: 70px;
+    height: 70px;
+
+    /* border-radius: 50px; */
+    /* border: 6px solid var(--background-color); */
+    margin-right: 20px;
 }
 
 .testimonials-2 .testimonial-item h3 {
@@ -1629,7 +1657,9 @@ section,
 }
 
 .testimonials-2 .testimonial-item .stars i {
-    color: #ffc107;
+    /* color: #ffc107; */
+    /* color: var(--default-color); */
+    color: rgba(var(--default-color), 0.7);
     margin: 0 1px;
 }
 
