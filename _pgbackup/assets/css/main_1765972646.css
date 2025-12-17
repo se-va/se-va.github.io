@@ -1168,9 +1168,9 @@ section,
 }
 
 .testimonials .testimonial-item .profile .profile-info span {
-    font-size: 12px;
+    font-size: 13px;
     color: color-mix(in srgb, var(--default-color) 70%, transparent);
-    transform-origin: 0px;
+    line-height: 1..1;
 }
 
 .testimonials .testimonial-item .featured-img-wrapper {
@@ -2087,8 +2087,8 @@ section,
 }
 
 .author .author-image-container .author-image {
-    width: 220px;
-    height: 280px;
+    width: 180px;
+    height: 180px;
     border-radius: 16px;
     object-fit: cover;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);

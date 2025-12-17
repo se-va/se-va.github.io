@@ -2087,8 +2087,8 @@ section,
 }
 
 .author .author-image-container .author-image {
-    width: 220px;
-    height: 280px;
+    width: 180px;
+    height: 180px;
     border-radius: 16px;
     object-fit: cover;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
