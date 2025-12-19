@@ -24,54 +24,71 @@
     </head>
     <body class="index-page">
         <header id="header" class="align-items-center d-flex fixed-top header">
-            <div class="align-items-center container-fluid container-xl d-flex justify-content-between position-relative"><a href="index.html" class="logo d-flex align-items-center"> <!-- Uncomment the line below if you also wish to use an image logo --> <!-- <img src="assets/img/logo.webp" alt=""> --> <h1 class="sitename">S.UTRA</h1> </a>
+            <div class="align-items-center container-fluid container-xl d-flex justify-content-between position-relative">
+                <a href="index.html" class="logo d-flex align-items-center"> <!-- Uncomment the line below if you also wish to use an image logo --> <!-- <img src="assets/img/logo.webp" alt=""> --> <h1 class="sitename">S.UTRA</h1> </a>
                 <nav id="navmenu" class="navmenu">
                     <ul>
-                        <li><a href="#hero" class="active" style="color: #ffba60;">Go!</a>
+                        <li>
+                            <a href="#hero" class="active" style="color: #ffba60;">Go!</a>
                         </li>
-                        <li><a href="#about" class="fw-semibold text-white">О курсе</a>
+                        <li>
+                            <a href="#about" class="fw-semibold text-white">О курсе</a>
                         </li>
-                        <li><a href="#features" class="fw-semibold text-white">Для кого&nbsp;</a>
+                        <li>
+                            <a href="#features" class="fw-semibold text-white">Для кого&nbsp;</a>
                         </li>
-                        <li><a href="#services" class="fw-semibold text-white">Программа</a>
+                        <li>
+                            <a href="#services" class="fw-semibold text-white">Программа</a>
                         </li>
-                        <li><a href="#pricing" class="fw-semibold text-white">Цены</a>
+                        <li>
+                            <a href="#pricing" class="fw-semibold text-white">Цены</a>
                         </li>
-                        <li><a href="#portfolio" class="fw-semibold text-white">Отзывы</a>
+                        <li>
+                            <a href="#portfolio" class="fw-semibold text-white">Отзывы</a>
                         </li>
-                        <li><a href="#team" class="fw-semibold text-white">Команда</a>
+                        <li>
+                            <a href="#team" class="fw-semibold text-white">Команда</a>
                         </li>
-                        <li class="dropdown">
-                            <a href="#"><span class="fw-semibold text-white">Вопросы</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <li class="dropdown"><a href="#"><span class="fw-semibold text-white">Вопросы</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                             <ul class="dropdown-active">
-                                <li><a href="#">Dropdown 1</a>
+                                <li>
+                                    <a href="#">Dropdown 1</a>
                                 </li>
-                                <li class="dropdown">
-                                    <a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                                     <ul>
-                                        <li><a href="#">Deep Dropdown 1</a>
+                                        <li>
+                                            <a href="#">Deep Dropdown 1</a>
                                         </li>
-                                        <li><a href="#">Deep Dropdown 2</a>
+                                        <li>
+                                            <a href="#">Deep Dropdown 2</a>
                                         </li>
-                                        <li><a href="#">Deep Dropdown 3</a>
+                                        <li>
+                                            <a href="#">Deep Dropdown 3</a>
                                         </li>
-                                        <li><a href="#">Deep Dropdown 4</a>
+                                        <li>
+                                            <a href="#">Deep Dropdown 4</a>
                                         </li>
-                                        <li><a href="#">Deep Dropdown 5</a>
+                                        <li>
+                                            <a href="#">Deep Dropdown 5</a>
                                         </li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Dropdown 2</a>
+                                <li>
+                                    <a href="#">Dropdown 2</a>
                                 </li>
-                                <li><a href="#">Dropdown 3</a>
+                                <li>
+                                    <a href="#">Dropdown 3</a>
                                 </li>
-                                <li><a href="#">Dropdown 4</a>
+                                <li>
+                                    <a href="#">Dropdown 4</a>
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="#contact" class="fw-semibold text-white">Контакты</a>
+                        <li>
+                            <a href="#contact" class="fw-semibold text-white">Контакты</a>
                         </li>
-                    </ul><i class="mobile-nav-toggle d-xl-none bi bi-list" style="color: #ffffff;"></i>
+                    </ul>
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list" style="color: #ffffff;"></i>
                 </nav>
             </div>
         </header>
@@ -79,10 +96,18 @@
             <!-- Hero Section -->
             <section id="hero" class="hero section light-background">
                 <div class="video-background">
-                    <video autoplay="" muted="" loop="" playsinline="">
-                        <source src="assets/img/video/video-3.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
+                    <video id="bg-video" autoplay="" muted="" loop="" playsinline="">
+                        <source src="assets/img/video/video-4.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видео.
                     </video>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                        const video = document.getElementById('bg-video');
+                        video.addEventListener('loadedmetadata', function() {
+                        this.playbackRate = 0.7;
+                                });
+                            });
+                    </script>
                     <div class="video-overlay"></div>
                     <!-- <div ></div> -->
                 </div>
@@ -93,9 +118,7 @@
                                 <h1 data-aos="fade-up" data-aos-delay="100" style="font-size: 100px; letter-spacing: 7px; font-family: 'Roboto', sans-serif;">С.УТРА </h1>
                                 <h2 data-aos="fade-up" data-aos-delay="100" class="" style="font-size: 50px; gap: 14px; letter-spacing: 4px; font-family: 'Roboto', sans-serif;">В ПОТОКЕ ВОСТОРГА</h2>
                                 <p data-aos="fade-up" data-aos-delay="200" class="lh-base">Судьбу можно изменить. Стань сам себе психологом.<br>Когда устал искать ответы снаружи — С.УТРА поможет найти их внутри. Это методика, которая возвращает силы, внутреннюю опору, целостность и радость жизни<br>всего за 2 месяца.</p>
-                                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
-                                    <a href="#about" class="btn btn-primary">В поток</a>
-                                    <a href="#services" class="bg-dark bg-opacity-50 border-white btn btn-outline btn-outline-light text-white">Антистресс-подарок</a>
+                                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300"><a href="#about" class="btn btn-primary">В поток</a><a href="#services" class="bg-dark bg-opacity-50 border-white btn btn-outline btn-outline-light text-white">Антистресс-подарок</a>
                                 </div>
                             </div>
                         </div>
@@ -106,8 +129,7 @@
             <!-- Features 4 Section -->
             <section id="features-4" class="features-4 section">
                 <!-- Section Title -->
-                <div class="container section-title" data-aos="fade-up">
-                    <span class="subtitle">для кого</span>
+                <div class="container section-title" data-aos="fade-up"><span class="subtitle">для кого</span>
                     <h2>ВЫ ЗДЕСЬ НЕ СЛУЧАЙНО</h2>
                     <p>Если чувствуете, что пора что-то менять.</p>
                 </div>
@@ -181,8 +203,7 @@
             <!-- Features 3 Section -->
             <section id="features-3" class="features-3 section">
                 <!-- Section Title -->
-                <div class="container section-title" data-aos="fade-up">
-                    <span class="subtitle">ценность</span>
+                <div class="container section-title" data-aos="fade-up"><span class="subtitle">ценность</span>
                     <h2>УНИВЕРСАЛЬНЫЙ ИНСТРУМЕНТ</h2>
                     <p>Работает во всех сферах жизни</p>
                 </div>
@@ -196,8 +217,7 @@
                                         <h3>ЛЮБОВЬ И СЕМЬЯ</h3>
                                         <p>•Гармония с детьми и родителями<br>•Найти партнерство и построить глубокие отношения<br>•Осознанная любовь без условий</p>
                                     </div>
-                                    <div class="feature-icon flex-shrink-0">
-                                        <i class="bi bi-hearts"></i>
+                                    <div class="feature-icon flex-shrink-0"><i class="bi bi-hearts"></i>
                                     </div>
                                 </div>
                             </div>
@@ -208,8 +228,7 @@
                                         <h3>КАРЬЕРА И ФИНАНСЫ</h3>
                                         <p>•Убрать подсознательные барьеры<br>•Повысить доход и уверенность<br>•Проявить лидерские качества</p>
                                     </div>
-                                    <div class="feature-icon flex-shrink-0">
-                                        <i class="bi bi-briefcase"></i>
+                                    <div class="feature-icon flex-shrink-0"><i class="bi bi-briefcase"></i>
                                     </div>
                                 </div>
                             </div>
@@ -220,8 +239,7 @@
                                         <h3>ЗДОРОВЬЕ</h3>
                                         <p>•Убрать подсознательные барьеры<br>•Повысить доход и уверенность<br>•Проявить лидерские качества</p>
                                     </div>
-                                    <div class="feature-icon flex-shrink-0">
-                                        <i class="bi bi-heart-pulse-fill"></i>
+                                    <div class="feature-icon flex-shrink-0"><i class="bi bi-heart-pulse-fill"></i>
                                     </div>
                                 </div>                                 
                             </div>
@@ -236,8 +254,7 @@
                         <div class="col-lg-4">
                             <div class="feature-item mb-5" data-aos="fade-left" data-aos-delay="200">
                                 <div class="d-flex align-items-center gap-4">
-                                    <div class="feature-icon flex-shrink-0">
-                                        <i class="bi bi-mortarboard-fill"></i>
+                                    <div class="feature-icon flex-shrink-0"><i class="bi bi-mortarboard-fill"></i>
                                     </div>
                                     <div class="feature-content">
                                         <h3>ЛИЧНОСТНЫЙ РОСТ</h3>
@@ -249,8 +266,7 @@
                             <!-- End .feature-item -->
                             <div class="feature-item mb-5" data-aos="fade-left" data-aos-delay="300">
                                 <div class="d-flex align-items-center gap-4">
-                                    <div class="feature-icon flex-shrink-0">
-                                        <i class="bi bi-globe"></i>
+                                    <div class="feature-icon flex-shrink-0"><i class="bi bi-globe"></i>
                                     </div>
                                     <div class="feature-content">
                                         <h3>СОЦИУМ И ОКРУЖЕНИЕ</h3>
@@ -262,8 +278,7 @@
                             <!-- End .feature-item -->
                             <div class="feature-item" data-aos="fade-left" data-aos-delay="400">
                                 <div class="d-flex align-items-center gap-4">
-                                    <div class="feature-icon flex-shrink-0">
-                                        <i class="bi bi-bluesky"></i>
+                                    <div class="feature-icon flex-shrink-0"><i class="bi bi-bluesky"></i>
                                     </div>
                                     <div class="feature-content">
                                         <h3>ДУХОВНОЕ РАЗВИТИЕ</h3>
@@ -324,14 +339,14 @@
                                             <div>
                                                 <div class="profile d-flex align-items-center">
                                                     <div class="profile-info">
-                                                        <h3>Ольга</h3>
-                                                        <span>Регрессолог. Астролог.</span>
+                                                        <h3>Ольга</h3><span>Регрессолог. Астролог.</span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div>
                                                 <div class="profile d-flex align-items-center">
-                                                    <div class="profile-info"><span></span>
+                                                    <div class="profile-info">
+                                                        <span></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -360,14 +375,14 @@
                                             <div>
                                                 <div class="profile d-flex align-items-center">
                                                     <div class="profile-info">
-                                                        <h3>Вишакха</h3>
-                                                        <span>Студентка</span>
+                                                        <h3>Вишакха</h3><span>Студентка</span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div>
                                                 <div class="profile d-flex align-items-center">
-                                                    <div class="profile-info"><span></span>
+                                                    <div class="profile-info">
+                                                        <span></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -394,14 +409,14 @@
                                             <div>
                                                 <div class="profile d-flex align-items-center">
                                                     <div class="profile-info">
-                                                        <h3>Андрей</h3><span>IT-специалист</span>
+                                                        <h3>Андрей</h3>
+                                                        <span>IT-специалист</span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div>
                                                 <div class="profile d-flex align-items-center">
-                                                    <div class="profile-info">
-                                                        <span></span>
+                                                    <div class="profile-info"><span></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -429,14 +444,14 @@
                                             <div>
                                                 <div class="profile d-flex align-items-center">
                                                     <div class="profile-info">
-                                                        <h3>Людмила</h3>
-                                                        <span>(Владелец частного бизнеса). Психолог. Наставник в проектах S.UTRA</span>
+                                                        <h3>Людмила</h3><span>(Владелец частного бизнеса). Психолог. Наставник в проектах S.UTRA</span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div>
                                                 <div class="profile d-flex align-items-center">
-                                                    <div class="profile-info"><span></span>
+                                                    <div class="profile-info">
+                                                        <span></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -466,14 +481,14 @@
                                             <div>
                                                 <div class="profile d-flex align-items-center">
                                                     <div class="profile-info">
-                                                        <h3>Лариса</h3>
-                                                        <span>(Инженер). Коуч. Психолог.Наставник в проектах S.UTRA</span>
+                                                        <h3>Лариса</h3><span>(Инженер). Коуч. Психолог.Наставник в проектах S.UTRA</span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div>
                                                 <div class="profile d-flex align-items-center">
-                                                    <div class="profile-info"><span></span>
+                                                    <div class="profile-info">
+                                                        <span></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -507,14 +522,14 @@
                                             <div>
                                                 <div class="profile d-flex align-items-center">
                                                     <div class="profile-info">
-                                                        <h3>Сауле</h3>
-                                                        <span>(Экономист, юрист). Психолог. Коуч. Практик и исследователь передовых методик трансформации сознания. Наставник в проектах S.UTRA</span>
+                                                        <h3>Сауле</h3><span>(Экономист, юрист). Психолог. Коуч. Практик и исследователь передовых методик трансформации сознания. Наставник в проектах S.UTRA</span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div>
                                                 <div class="profile d-flex align-items-center">
-                                                    <div class="profile-info"><span></span>
+                                                    <div class="profile-info">
+                                                        <span></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -548,12 +563,9 @@
                                     <div class="gradient-overlay"></div>
                                 </div>
                                 <div class="badge-card" data-aos="flip-left" data-aos-delay="400">
-                                    <div class="badge-icon">
-                                        <i class="bi bi-trophy-fill"></i>
+                                    <div class="badge-icon"><i class="bi bi-trophy-fill"></i>
                                     </div>
-                                    <div class="badge-text">
-                                        <span class="badge-number">98%</span>
-                                        <span class="badge-label">продолжают обучение с нами из курс в курс</span>
+                                    <div class="badge-text"><span class="badge-number">98%</span><span class="badge-label">продолжают обучение с нами из курс в курс</span>
                                     </div>
                                 </div>
                             </div>
@@ -564,8 +576,7 @@
                                 <p class="intro-text">Вся теория и практики будут доступны в записи. Если вы пропустите какое-то занятие, то с легкостью можете догнать группу и задать вопросы по материалу на канале обучения</p>
                                 <div class="feature-grid">
                                     <div class="feature-item" data-aos="fade-up" data-aos-delay="350">
-                                        <div class="feature-icon">
-                                            <i class="bi bi-lightning-charge-fill"></i>
+                                        <div class="feature-icon"><i class="bi bi-lightning-charge-fill"></i>
                                         </div>
                                         <div class="feature-content">
                                             <h4>Старт 7 ФЕВРАЛЯ</h4>
@@ -573,8 +584,7 @@
                                         </div>
                                     </div>
                                     <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
-                                        <div class="feature-icon">
-                                            <i class="bi bi-shield-check"></i>
+                                        <div class="feature-icon"><i class="bi bi-shield-check"></i>
                                         </div>
                                         <div class="feature-content">
                                             <h4>Время занятий</h4>
@@ -582,8 +592,7 @@
                                         </div>
                                     </div>
                                     <div class="feature-item" data-aos="fade-up" data-aos-delay="450">
-                                        <div class="feature-icon">
-                                            <i class="bi bi-people-fill"></i>
+                                        <div class="feature-icon"><i class="bi bi-people-fill"></i>
                                         </div>
                                         <div class="feature-content">
                                             <h4>Факультативы</h4>
@@ -591,8 +600,7 @@
                                         </div>
                                     </div>
                                     <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
-                                        <div class="feature-icon">
-                                            <i class="bi bi-graph-up-arrow"></i>
+                                        <div class="feature-icon"><i class="bi bi-graph-up-arrow"></i>
                                         </div>
                                         <div class="feature-content">
                                             <h4>Платформы обучения</h4>
@@ -600,8 +608,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="action-buttons">
-                                    <a href="#" class="btn-gradient">
+                                <div class="action-buttons"><a href="#" class="btn-gradient">
                   Тарифы<i class="bi bi-arrow-right"></i> </a>
                                 </div>
                             </div>
@@ -654,7 +661,16 @@
                                                 <div>
                                                     <h3>МОДУЛЬ 01</h3>
                                                     <h4>Формирование намерения, мотивация и дружеская атмосфера</h4>
-                                                    <div class="stars"><i class="bi bi-square-fill"></i><i class="bi bi-square"></i><i class="bi bi-square"></i><i class="bi bi-square"></i><i class="bi bi-square"></i><i class="bi bi-square"></i><i class="bi bi-square"></i><i class="bi bi-square"></i><i class="bi bi-square"></i>
+                                                    <div class="stars">
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -670,7 +686,16 @@
                                                 <div>
                                                     <h3>МОДУЛЬ 02</h3>
                                                     <h4>Подготовка к работе с психологическими блоками</h4>
-                                                    <div class="stars"><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square"></i><i class="bi bi-square"></i><i class="bi bi-square"></i><i class="bi bi-square"></i><i class="bi bi-square"></i><i class="bi bi-square"></i><i class="bi bi-square"></i>
+                                                    <div class="stars">
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -687,7 +712,16 @@
                                                 <div>
                                                     <h3>МОДУЛЬ 03</h3>
                                                     <h4>Подробный поэтапный разбор методики С.УТРА</h4>
-                                                    <div class="stars"><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square"></i><i class="bi bi-square"></i><i class="bi bi-square"></i><i class="bi bi-square"></i><i class="bi bi-square"></i><i class="bi bi-square"></i>
+                                                    <div class="stars">
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -704,7 +738,16 @@
                                                 <div>
                                                     <h3>МОДУЛЬ 04</h3>
                                                     <h4>Применение методики в особых ситуациях</h4>
-                                                    <div class="stars"><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square"></i><i class="bi bi-square"></i><i class="bi bi-square"></i><i class="bi bi-square"></i><i class="bi bi-square"></i>
+                                                    <div class="stars">
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -721,7 +764,16 @@
                                                 <div>
                                                     <h3>МОДУЛЬ 05</h3>
                                                     <h4>Работа с ленью и прокрастинацией</h4>
-                                                    <div class="stars"><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square"></i><i class="bi bi-square"></i><i class="bi bi-square"></i><i class="bi bi-square"></i>
+                                                    <div class="stars">
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -738,7 +790,16 @@
                                                 <div>
                                                     <h3>МОДУЛЬ 06</h3>
                                                     <h4>Применение методики в работе с привязанностями (зависимостями)</h4>
-                                                    <div class="stars"><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square"></i><i class="bi bi-square"></i><i class="bi bi-square"></i>
+                                                    <div class="stars">
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -755,7 +816,16 @@
                                                 <div>
                                                     <h3>МОДУЛЬ 07</h3>
                                                     <h4>Работа с Метафорическими Картами (МАК)</h4>
-                                                    <div class="stars"><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square"></i><i class="bi bi-square"></i>
+                                                    <div class="stars">
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square"></i>
+                                                        <i class="bi bi-square"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -772,7 +842,16 @@
                                                 <div>
                                                     <h3>МОДУЛЬ 08</h3>
                                                     <h4>Практикум и ответы на вопросы по методике С.УТРА</h4>
-                                                    <div class="stars"><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square"></i>
+                                                    <div class="stars">
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -789,7 +868,16 @@
                                                 <div>
                                                     <h3>МОДУЛЬ 09</h3>
                                                     <h4>Выпускная сессия</h4>
-                                                    <div class="stars"><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i><i class="bi bi-square-fill"></i>
+                                                    <div class="stars">
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
+                                                        <i class="bi bi-square-fill"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -809,8 +897,7 @@
             <!-- Pricing Section -->
             <section id="pricing" class="pricing section">
                 <!-- Section Title -->
-                <div class="container section-title" data-aos="fade-up">
-                    <span class="subtitle">цены</span>
+                <div class="container section-title" data-aos="fade-up"><span class="subtitle">цены</span>
                     <h2>ТАРИФЫ</h2>
                     <p>Основная цена указана в рублях. При оплате в иных валютах расчёт цены осуществляется исходя из актуального курса на текущий день, когда происходит оплата.
           С условиями приобретения курса в рассрочку и условиями возврата можно ознакомиться ниже.</p>
@@ -823,17 +910,23 @@
                                 <h3>ОСНОВА</h3>
                                 <h4>10800<span> / руб</span></h4>
                                 <ul>
-                                    <li><i class="bi bi-check"></i> <span>Онлайн-занятия с Нанда-бихари. В каждом эфире — сессия с участником + 30 минут ответов на вопросы</span>
+                                    <li>
+                                        <i class="bi bi-check"></i> <span>Онлайн-занятия с Нанда-бихари. В каждом эфире — сессия с участником + 30 минут ответов на вопросы</span>
                                     </li>
-                                    <li><i class="bi bi-check"></i> <span>Подробные конспекты занятий и медитации для самостоятельной практики, домашние задания. Доступ в закрытый Telegram-чат</span>
+                                    <li>
+                                        <i class="bi bi-check"></i> <span>Подробные конспекты занятий и медитации для самостоятельной практики, домашние задания. Доступ в закрытый Telegram-чат</span>
                                     </li>
-                                    <li><i class="bi bi-check"></i> <span>Факультативные занятия с наставниками раз в неделю</span>
+                                    <li>
+                                        <i class="bi bi-check"></i> <span>Факультативные занятия с наставниками раз в неделю</span>
                                     </li>
-                                    <li class="na"><i class="bi bi-x"></i> <span>Индивидуальные сессии</span>
+                                    <li class="na">
+                                        <i class="bi bi-x"></i> <span>Индивидуальные сессии</span>
                                     </li>
-                                    <li class="na"><i class="bi bi-x"></i> <span>Личное ведение и ответы на вопросы</span>
+                                    <li class="na">
+                                        <i class="bi bi-x"></i> <span>Личное ведение и ответы на вопросы</span>
                                     </li>
-                                </ul><a href="#" class="buy-btn">ОПЛАТИТЬ</a>
+                                </ul>
+                                <a href="#" class="buy-btn">ОПЛАТИТЬ</a>
                             </div>
                         </div>
                         <!-- End Pricing Item -->
@@ -842,17 +935,23 @@
                                 <h3>ГЛУБИНА</h3>
                                 <h4>15800<span>&nbsp;/ руб</span></h4>
                                 <ul>
-                                    <li><i class="bi bi-check"></i>Онлайн-занятия с Нанда-бихари. В каждом эфире — сессия с участником + 30 минут ответов на вопросы
+                                    <li>
+                                        <i class="bi bi-check"></i>Онлайн-занятия с Нанда-бихари. В каждом эфире — сессия с участником + 30 минут ответов на вопросы
                                     </li>
-                                    <li><i class="bi bi-check"></i> <span>Подробные конспекты занятий и медитации для самостоятельной практики, домашние задания. Доступ в закрытый Telegram-чат</span>
+                                    <li>
+                                        <i class="bi bi-check"></i> <span>Подробные конспекты занятий и медитации для самостоятельной практики, домашние задания. Доступ в закрытый Telegram-чат</span>
                                     </li>
-                                    <li><i class="bi bi-check"></i> <span>Факультативные занятия с наставниками раз в неделю</span>
+                                    <li>
+                                        <i class="bi bi-check"></i> <span>Факультативные занятия с наставниками раз в неделю</span>
                                     </li>
-                                    <li><i class="bi bi-check"></i> <span>Проработка с одним из наставников проекта по вашему личному запросу. 2 консультации по методике С.УТРА</span>
+                                    <li>
+                                        <i class="bi bi-check"></i> <span>Проработка с одним из наставников проекта по вашему личному запросу. 2 консультации по методике С.УТРА</span>
                                     </li>
-                                    <li><i class="bi bi-check"></i> <span>Личное ведение наставника проекта и ответы на вопросы по материалам занятий и вашей практики</span>
+                                    <li>
+                                        <i class="bi bi-check"></i> <span>Личное ведение наставника проекта и ответы на вопросы по материалам занятий и вашей практики</span>
                                     </li>
-                                </ul><a href="#" class="buy-btn">ОПЛАТИТЬ</a>
+                                </ul>
+                                <a href="#" class="buy-btn">ОПЛАТИТЬ</a>
                             </div>
                         </div>
                         <!-- End Pricing Item -->
@@ -861,17 +960,23 @@
                                 <h3>ПОТОК</h3>
                                 <h4>20800<span>&nbsp;/ руб</span></h4>
                                 <ul>
-                                    <li><i class="bi bi-check"></i> <span>Онлайн-занятия с Нанда-бихари. В каждом эфире — сессия с участником + 30 минут ответов на вопросы</span>
+                                    <li>
+                                        <i class="bi bi-check"></i> <span>Онлайн-занятия с Нанда-бихари. В каждом эфире — сессия с участником + 30 минут ответов на вопросы</span>
                                     </li>
-                                    <li><i class="bi bi-check"></i> <span>Подробные конспекты занятий и медитации для самостоятельной практики, домашние задания. Доступ в закрытый Telegram-чат</span>
+                                    <li>
+                                        <i class="bi bi-check"></i> <span>Подробные конспекты занятий и медитации для самостоятельной практики, домашние задания. Доступ в закрытый Telegram-чат</span>
                                     </li>
-                                    <li><i class="bi bi-check"></i>Факультативные занятия с наставниками раз в неделю
+                                    <li>
+                                        <i class="bi bi-check"></i>Факультативные занятия с наставниками раз в неделю
                                     </li>
-                                    <li><i class="bi bi-check"></i>Проработка с Нанда-бихари по вашему личному запросу. 2 консультации по методике С.УТРА
+                                    <li>
+                                        <i class="bi bi-check"></i>Проработка с Нанда-бихари по вашему личному запросу. 2 консультации по методике С.УТРА
                                     </li>
-                                    <li><i class="bi bi-check"></i> <span>Личное ведение Нанда-бихари и ответы на вопросы по материалам занятий и вашей практики</span>
+                                    <li>
+                                        <i class="bi bi-check"></i> <span>Личное ведение Нанда-бихари и ответы на вопросы по материалам занятий и вашей практики</span>
                                     </li>
-                                </ul><a href="#" class="buy-btn">ОПЛАТИТЬ</a>
+                                </ul>
+                                <a href="#" class="buy-btn">ОПЛАТИТЬ</a>
                             </div>
                         </div>
                         <!-- End Pricing Item -->
@@ -882,8 +987,7 @@
             <!-- Faq Section -->
             <section id="faq" class="faq section">
                 <!-- Section Title -->
-                <div class="container section-title" data-aos="fade-up">
-                    <span class="subtitle">вопросы</span>
+                <div class="container section-title" data-aos="fade-up"><span class="subtitle">вопросы</span>
                     <h2>Вопросы и ответы</h2>
                     <p>Условия оплаты и&nbsp;возврата средств за курс «С.УТРА в потоке восторга».</p>
                 </div>
@@ -894,13 +998,10 @@
                             <div class="faq-wrapper">
                                 <div class="faq-item">
                                     <div class="faq-header faq-active">
-                                        <div class="faq-icon">
-                                            <i class="bi bi-question-circle"></i>
+                                        <div class="faq-icon"><i class="bi bi-question-circle"></i>
                                         </div>
                                         <h4>Условия оплаты. Могу ли я оплатить курс в рассрочку?</h4>
-                                        <div class="faq-toggle">
-                                            <i class="bi bi-plus"></i>
-                                            <i class="bi bi-dash"></i>
+                                        <div class="faq-toggle"><i class="bi bi-plus"></i><i class="bi bi-dash"></i>
                                         </div>
                                     </div>
                                     <div class="faq-content">
@@ -913,13 +1014,10 @@
                                 <!-- End FAQ Item -->
                                 <div class="faq-item">
                                     <div class="faq-header faq-active">
-                                        <div class="faq-icon">
-                                            <i class="bi bi-question-circle"></i>
+                                        <div class="faq-icon"><i class="bi bi-question-circle"></i>
                                         </div>
                                         <h4>Условия возврата средств. До начала обучения.</h4>
-                                        <div class="faq-toggle">
-                                            <i class="bi bi-plus"></i>
-                                            <i class="bi bi-dash"></i>
+                                        <div class="faq-toggle"><i class="bi bi-plus"></i><i class="bi bi-dash"></i>
                                         </div>
                                     </div>
                                     <div class="faq-content">
@@ -931,13 +1029,10 @@
                                 <!-- End FAQ Item -->
                                 <div class="faq-item">
                                     <div class="faq-header faq-active">
-                                        <div class="faq-icon">
-                                            <i class="bi bi-question-circle"></i>
+                                        <div class="faq-icon"><i class="bi bi-question-circle"></i>
                                         </div>
                                         <h4>Условия возврата средств. После начала обучения.</h4>
-                                        <div class="faq-toggle">
-                                            <i class="bi bi-plus"></i>
-                                            <i class="bi bi-dash"></i>
+                                        <div class="faq-toggle"><i class="bi bi-plus"></i><i class="bi bi-dash"></i>
                                         </div>
                                     </div>
                                     <div class="faq-content">
@@ -953,13 +1048,10 @@
                                 <!-- End FAQ Item -->
                                 <div class="faq-item faq-active">
                                     <div class="faq-header">
-                                        <div class="faq-icon">
-                                            <i class="bi bi-question-circle"></i>
+                                        <div class="faq-icon"><i class="bi bi-question-circle"></i>
                                         </div>
                                         <h4>Возврат средств&nbsp;для тарифов «ГЛУБИНА» и «ПОТОК»</h4>
-                                        <div class="faq-toggle">
-                                            <i class="bi bi-plus"></i>
-                                            <i class="bi bi-dash"></i>
+                                        <div class="faq-toggle"><i class="bi bi-plus"></i><i class="bi bi-dash"></i>
                                         </div>
                                     </div>
                                     <div class="faq-content">
@@ -972,13 +1064,10 @@
                                 <!-- End FAQ Item -->
                                 <div class="faq-item faq-active">
                                     <div class="faq-header faq-active">
-                                        <div class="faq-icon">
-                                            <i class="bi bi-question-circle"></i>
+                                        <div class="faq-icon"><i class="bi bi-question-circle"></i>
                                         </div>
                                         <h4>Как оформить возврат?&nbsp;Основания для отказа в возврате.</h4>
-                                        <div class="faq-toggle">
-                                            <i class="bi bi-plus"></i>
-                                            <i class="bi bi-dash"></i>
+                                        <div class="faq-toggle"><i class="bi bi-plus"></i><i class="bi bi-dash"></i>
                                         </div>
                                     </div>
                                     <div class="faq-content">
@@ -1002,15 +1091,12 @@
                         <div class="author-header">
                             <div class="author-image-container">
                                 <img src="assets/img/person/nb.webp" class="author-image" alt="" loading="lazy">
-                                <div class="expertise-tags">
-                                    <span>Канал</span>
-                                    <span>Cообщество</span>
+                                <div class="expertise-tags"><span>Канал</span><span>Cообщество</span>
                                 </div>
                             </div>
                             <div class="author-intro">
                                 <div class="name-block">
-                                    <h3 class="author-name">Автор методики: Нанда-Бихари</h3>
-                                    <span class="verified-badge"> <i class="bi bi-patch-check-fill">&nbsp;Пространство Развития</i></span>
+                                    <h3 class="author-name">Автор методики: Нанда-Бихари</h3><span class="verified-badge"> <i class="bi bi-patch-check-fill">&nbsp;Пространство Развития</i></span>
                                 </div>
                                 <p class="author-tagline">
                 Проект основан Нанда-бихари — монахом, наставником, учителем йоги и медитации с 33+ лет стажем. </p>
@@ -1028,36 +1114,26 @@
                                 <div class="bio-section">
                                     <p class="bio-text">Подписывайтесь на наши каналы и сообщества в социальных сетях, чтобы следить за новостями и узнавать как можно больше о нашем пространстве развития.&nbsp;</p>
                                     <div class="author-metrics">
-                                        <div class="metric">
-                                            <i class="bi bi-pencil-square"></i>
-                                            <span>Еженедельные прямые эфиры</span>
+                                        <div class="metric"><i class="bi bi-pencil-square"></i><span>Еженедельные прямые эфиры</span>
                                         </div>
-                                        <div class="metric">
-                                            <i class="bi bi-stars"></i>
-                                            <span>Полезный и вдохновляющий контент</span>
+                                        <div class="metric"><i class="bi bi-stars"></i><span>Полезный и вдохновляющий контент</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="featured-posts">
                                     <h4>Предложения и вопросы</h4>
                                     <ul class="post-list">
-                                        <li>
-                                            <i class="bi bi-arrow-right-circle"></i>
-                                            <span>Координатор проекта Алла&nbsp;</span>
+                                        <li><i class="bi bi-arrow-right-circle"></i><span>Координатор проекта Алла&nbsp;</span>
                                         </li>
-                                        <li>
-                                            <i class="bi bi-arrow-right-circle"></i>
-                                            <span>&nbsp;Вопросы и предложения : vpotokevostorga@gmail.com</span>
+                                        <li><i class="bi bi-arrow-right-circle"></i><span>&nbsp;Вопросы и предложения : vpotokevostorga@gmail.com</span>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="author-footer">
-                                <div class="connect-links">
-                                    <a href="https://github.com/#" class="social-link"> <i class="bi bi-github"></i> <span>Telegram</span> </a>
-                                    <a href="https://twitter.com/#" class="social-link"> <i class="bi bi-twitter-x"></i> <span>ВКонтакте</span> </a>
-                                    <a href="https://dev.to/#" class="social-link"> <i class="bi bi-globe2"></i> <span>YouTube</span> </a>
-                                </div><a href="#" class="subscribe-button">Подписывайся на канал<i class="bi bi-bell"></i> </a>
+                                <div class="connect-links"><a href="https://github.com/#" class="social-link"> <i class="bi bi-github"></i> <span>Telegram</span> </a><a href="https://twitter.com/#" class="social-link"> <i class="bi bi-twitter-x"></i> <span>ВКонтакте</span> </a><a href="https://dev.to/#" class="social-link"> <i class="bi bi-globe2"></i> <span>YouTube</span> </a>
+                                </div>
+                                <a href="#" class="subscribe-button">Подписывайся на канал<i class="bi bi-bell"></i> </a>
                             </div>
                         </div>
                     </div>
@@ -1069,22 +1145,15 @@
             <div class="container">
                 <h3 class="sitename">S.UTRA</h3>
                 <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-                <div class="social-links d-flex justify-content-center">
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-skype"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
+                <div class="social-links d-flex justify-content-center"><a href=""><i class="bi bi-twitter-x"></i></a><a href=""><i class="bi bi-facebook"></i></a><a href=""><i class="bi bi-instagram"></i></a><a href=""><i class="bi bi-skype"></i></a><a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
                 <div class="container">
-                    <div class="copyright">
-                        <span>Copyright</span> <strong class="px-1 sitename">S.UTRA</strong> <span>All Rights Reserved</span>
+                    <div class="copyright"><span>Copyright</span> <strong class="px-1 sitename">S.UTRA</strong> <span>All Rights Reserved</span>
                     </div>
                 </div>
             </div>
         </footer>
-        <!-- Scroll Top -->
-        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        <!-- Scroll Top --><a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
         <!-- Preloader -->
         <!-- <div id="preloader"></div> -->
         <!-- Vendor JS Files -->
