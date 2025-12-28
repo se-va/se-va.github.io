@@ -9,3 +9,7 @@ Thumbs.db
 # Графика
 *.psd
 *.cdr
+
+# Папки
+_pgbackup/
+_pginfo/

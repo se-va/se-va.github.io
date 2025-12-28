@@ -324,6 +324,18 @@ h6 {
 }
 
 /* Navmenu - Mobile */
+/* ДИАГНОСТИКА !!! - элемент, который выходит за границы */
+/* @media (max-width: 1199px) {
+    * {
+        outline: 2px solid rgba(255, 0, 0, 0.1) !important;
+    }
+    
+    body {
+        overflow-x: hidden !important;
+        max-width: 100vw !important;
+        width: 100% !important;
+    }
+} */
 @media (max-width: 1199px) {
     .mobile-nav-toggle {
         color: var(--nav-color);
@@ -343,7 +355,9 @@ h6 {
         display: none;
         list-style: none;
         position: absolute;
-        inset: 60px 20px 20px 20px;
+
+        /* inset: 60px 20px 20px 20px; */
+        inset: 60px 10px 10px 10px;
         padding: 10px 0;
         margin: 0;
         border-radius: 6px;
@@ -583,6 +597,10 @@ h6 {
 /* --------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 -------------------------------------------------------------- */
+[data-aos] {
+    overflow: hidden !important;
+}
+
 @media screen and (max-width: 768px) {
     [data-aos-delay] {
         transition-delay: 0 !important;
@@ -680,6 +698,8 @@ section,
     color: var(--heading-color);
     margin-bottom: 1.5rem;
     letter-spacing: -1px;
+
+    /* letter-spacing: 0.1em; */
 }
 
 @media (max-width: 768px) {
@@ -767,21 +787,22 @@ section,
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    font-size: 5rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    line-height: 1.2;
+    line-height: 1;
+    letter-spacing: 0.1em;
 }
 
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
 }
 
 @media (max-width: 576px) {
     .hero h1 {
-        font-size: 2rem;
+        font-size: 3.4rem;
     }
 }
 
@@ -797,6 +818,11 @@ section,
         font-size: 1.1rem;
         margin-bottom: 2rem;
     }
+}
+
+.v_potoke {
+    font-size: 2rem;
+    letter-spacing: 0.07em;
 }
 
 .hero .hero-buttons {
