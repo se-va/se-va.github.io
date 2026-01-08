@@ -100,6 +100,10 @@
    * Init swiper sliders
    */
   function initSwiper() {
+
+    console.log('Swiper доступен?', typeof Swiper !== 'undefined');
+console.log('Найдено слайдеров:', document.querySelectorAll(".init-swiper").length);
+
     document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
       let config = JSON.parse(
         swiperElement.querySelector(".swiper-config").innerHTML.trim()
@@ -177,3 +181,4 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
